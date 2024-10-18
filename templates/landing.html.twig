@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome to My Website{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="welcome-container">
+        <h1>Welcome to My Website!</h1>
+        <a href="{{ path('login') }}">LOGIN</a>
+        <p>We're glad to have you here. Explore our features and learn more about what we offer.</p>
+
+        <h2>What You Can Do:</h2>
+        <ul>
+            <li>Learn about our services</li>
+            <li>Contact us for more information</li>
+            <li>Check out our latest updates and news</li>
+        </ul>
+
+        <h3>Get Started:</h3>
+    </div>
+
+    <footer>
+        <p>&copy; {{ "now"|date("Y") }} My Website. All rights reserved.</p>
+    </footer>
+{% endblock %}
